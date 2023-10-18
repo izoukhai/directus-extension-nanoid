@@ -1,0 +1,39 @@
+{
+  "name": "directus-extension-nanoid",
+  "description": "Generate random IDs with Nanoid",
+  "icon": "extension",
+  "version": "1.0.0",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-operation",
+	"nanoid",
+	"directus-unique-id",
+	"directus-random-id",
+	"directus-id-generator"
+  ],
+  "type": "module",
+  "directus:extension": {
+    "type": "operation",
+    "path": {
+      "app": "../extensions/operations/nanoid/app.js",
+      "api": "../extensions/operations/nanoid/api.js"
+    },
+    "source": {
+      "app": "src/app.ts",
+      "api": "src/api.ts"
+    },
+    "host": "^10.1.11"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "10.1.11",
+    "@types/node": "^20.8.6",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4"
+  }
+}
