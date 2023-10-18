@@ -2,4 +2,4 @@
 Generate random IDs of any size and any shape with Nanoid directly in your Directus app.
 
 ## How to use it
-If you're not using Docker, just clone this repo in your project, navigate into it and run `npm run build`.
+Run `npm i directus-extension-nanoid` in your project and you're good to go.
