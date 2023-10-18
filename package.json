@@ -2,7 +2,7 @@
   "name": "directus-extension-nanoid",
   "description": "Generate random IDs with Nanoid",
   "icon": "extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "directus",
     "directus-extension",
@@ -16,8 +16,8 @@
   "directus:extension": {
     "type": "operation",
     "path": {
-      "app": "../extensions/operations/nanoid/app.js",
-      "api": "../extensions/operations/nanoid/api.js"
+      "app": "dist/app.js",
+      "api": "dist/api.js"
     },
     "source": {
       "app": "src/app.ts",
